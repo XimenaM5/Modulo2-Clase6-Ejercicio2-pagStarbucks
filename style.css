@@ -91,6 +91,25 @@ main .main-izq{
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);;
 }
 
+.main-izq button{
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.boton-sesion2{
+    background-color: transparent;
+    color: white;
+}
+
+.boton-unete2{
+    background-color: transparent;
+    color: white;
+}
+
 main .main-der{
     width: 60%;
     height: 100vh;
