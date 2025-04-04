@@ -60,7 +60,7 @@
 
 .header-der button{
     border: none;
-    border-radius: 20px;
+    border-radius: 35px;
     padding: 6px 12px;
     border: 1px solid black;
     margin-right: 8px;
@@ -80,24 +80,43 @@
 
 main{
     display: flex;
-    background-color: blueviolet;
     width: 100%;
     height: 100vh;
+    font-family: sans-serif;
 }
 
 main .main-izq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 40%;
     height: 100vh;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);;
 }
 
+main .main-izq img{
+    width: 400px;
+}
+
+main .main-izq p{
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+
 .main-izq button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border: none;
-    border-radius: 20px;
+    border-radius: 35px;
     padding: 6px 12px;
     border: 1px solid rgb(255, 255, 255);
     margin-right: 8px;
     font-weight: bold;
+    margin: 20px 0;
 }
 
 .boton-sesion2{
@@ -113,10 +132,14 @@ main .main-izq{
 main .main-der{
     width: 60%;
     height: 100vh;
-    background-color: rgb(67, 46, 46);
+    background-color: rgb(255, 255, 255);
 }
-
 
 .contenedor-beneficios{
     display: flex;
+}
+
+.contenedor-beneficios img{
+    width: 100px;
+    height: auto;
 }
