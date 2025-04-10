@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 p{
@@ -48,7 +49,13 @@ p{
 .header-der{
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: -35px;
+}
+
+.header-der #menu-burguer{
+    width: 80px;
+    height: 40px;
+    opacity: 0;
 }
 
 .header-der span{
@@ -59,10 +66,6 @@ p{
     display: flex;
 }
 
-.header-der div p{
-    margin: 0 8px;
-}
-
 .header-der img{
     width: 25px;
     height: 20px;
@@ -71,6 +74,7 @@ p{
 .header-der div p{
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0 8px;
 }
 
 .header-der button{
@@ -174,11 +178,19 @@ main .main-der{
         display: none;
     }
 
-    .header-der{
+    .header-der div, button{
         display: flex;
         align-items: center;
         margin-right: 20px;
         display: none;
+    }
+
+    .header-der{
+        margin-right: 20px;
+    }
+
+    .header-der #menu-burguer{
+        opacity: 1;
     }
 
     main{
