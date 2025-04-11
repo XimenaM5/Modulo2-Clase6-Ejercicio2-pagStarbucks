@@ -6,7 +6,7 @@
 }
 
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .negritas{
@@ -41,7 +41,7 @@ p{
     height: 49px;
 }
 
-.header-izq p{
+.header-izq h5{
     text-transform: uppercase;
     margin: 10px;
 }
@@ -67,14 +67,16 @@ p{
 }
 
 .header-der img{
-    width: 25px;
-    height: 20px;
+    width: 45px;
+    height: 30px;
+    margin-right: -20px;
+    margin-top: -8px;
 }
 
-.header-der div p{
+.header-der div h5{
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0 8px;
+    margin: 0 20px;
 }
 
 .header-der button{
@@ -107,22 +109,42 @@ main{
 }
 
 main .main-izq{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 40%;
     height: 100vh;
     background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+main .main-izq .cafe-gratis p{
+    font-size: 2rem;
 }
 
 #main-izq-img{
     width: 50%;
-    bottom: 0px;
-    right: 0px;
+    align-self: flex-end;
 }
 
 main .main-izq img{
-    width: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .main-izq p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-weight: 400;
     font-size: 26px;
     color: white;
@@ -133,6 +155,8 @@ main .main-izq p{
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: fit-content;
+    align-self: center;
     border: none;
     border-radius: 35px;
     padding: 6px 12px;
@@ -140,6 +164,7 @@ main .main-izq p{
     margin-right: 8px;
     font-weight: bold;
     margin: 20px 0;
+    cursor: pointer;
 }
 
 .boton-sesion2{
@@ -153,24 +178,31 @@ main .main-izq p{
 }
 
 main .main-der{
+    margin-left: 40%;
+    padding: 3rem;
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    display: flex;
 }
 
 
 .contenedor-beneficios{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
 }
 
 .contenedor-beneficios img{
-    width: 100px;
+    width: 120px;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 
 @media screen and (max-width: 768px) {
+
     .header-izq a{
         display: flex;
         align-items: center;
@@ -205,11 +237,15 @@ main .main-der{
     }
 
     main .main-izq{
+        position: static;
         width: 100%;
         height: 80vh;
+        padding: 2rem 1rem;
     }
 
     main .main-der{
+        margin-left: 0;
+        padding: 2rem 1rem;
         width: 100%;
         height: 100vh;
         background-color: rgb(255, 255, 255);
